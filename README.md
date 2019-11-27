@@ -1,12 +1,16 @@
-# Python wrapper function for processing and extracting the literature information from the open-access repository
+# Stacked ensemble regression python module. 
 
-This repository contains a python wrapper function, named as **web_scrapy.py**, for extracting the key journal information 
-(e.g., journal title, publication sources, publication date and abstract) that are related to the topic of "oxygen evolution reaction" 
-from [Directory of Open Access Journals (DOAJ)](https://doaj.org/) in an automatic fashion. The script that I designed integrates 
-two important components:(1) an open-source web scraping framework [Scrapy](https://docs.scrapy.org/en/latest/) and 
-(2)[ChromeDriver](https://chromedriver.chromium.org/). Note that the latest version of ChromeDriver has a limitation on 
-the processing page number. In addition, the website administrator may change the HTML files and the corresponding architecture 
-every few months. Therefore, you may have to update the 'XPath'to the appropriate container accordingly. This code only provides 
-a template for your research and study. The example output results are shown in the **data.csv** file.
+This repository contains the python source code of stacked ensemble model for regressional analysis, namely **stacked_ensemble.py**.
+Motivated by the blog article of [Why do stacked ensemble models win data science competitions?](https://blogs.sas.com/content/subconsciousmusings/2017/05/18/stacked-ensemble-models-win-data-science-competitions/), I created this ensemble model to boost the predictive performance of conventional machine learning models. The methodology of the stacked ensemble model is very similar to perceptron algorithm. During the training process, the all the submodels randomly select a subset of features and samples to optimize the parameters and the output results of the previous layer become the input for training the submodels at the next layer. The schematic belows shows the architecture of the stacked ensemble model. The training performance is surprising well for the small test errors. However this model has clear Pros and Cons as following:
+
+Pros:
+---
+1. asdfsf
+2. sdfds
+3. fdsfsd
+Cons:
+---
+1.dsfdsf
+2.dfsfds
 
 ![alt text](https://github.com/zhengl0217/Stacked-ensemble-regression-model/blob/master/model_schematics.png)
