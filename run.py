@@ -69,7 +69,7 @@ sample_ratio (float): ratio of randomly selected samples size for training each 
 """
 model = stacked_ensemble_regression(sub_estimator =sub_models, aggregator_estimator = aggregator_model, 
                                     feature_name = features, layers = 2, model_number_layer = [20, 10], 
-                                    feature_ratio = 0.75, sample_ratio = 0.75,random_state = None)
+                                    feature_ratio = 0.75, sample_ratio = 0.75, random_state = None)
 model.fit(X_train, Y_train)
 
 # ensemble model prediction
