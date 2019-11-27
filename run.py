@@ -15,7 +15,7 @@ from stacked_ensemble import stacked_ensemble_regression
 import scipy
 import matplotlib.pyplot as plt
 
-# load in data
+# load in data into panda data frame
 df = pd.read_csv('data.csv')
 columns = df.columns.values.tolist()
 #df = pd.DataFrame(data.values, columns = columns)
