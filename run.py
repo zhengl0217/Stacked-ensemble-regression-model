@@ -18,7 +18,6 @@ import matplotlib.pyplot as plt
 # load in data into panda data frame
 df = pd.read_csv('data.csv')
 columns = df.columns.values.tolist()
-#df = pd.DataFrame(data.values, columns = columns)
 
 # outlier removal                                                                                                  
 df = df[df[columns[1:]].apply(lambda x: np.abs(x - x.mean()) / x.std() < 3).all(axis=1)]
