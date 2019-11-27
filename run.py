@@ -59,9 +59,9 @@ sub_models = {'KNN': KNN, 'RF': RF, 'GP': GP, 'GBM': GBM, 'KR': KR}
 aggregator_model = {'LASSO': LASSO} 
 
 """ parameter expliation for the "stacked_ensemble_regression" model
-sub_estimator (dict): sub-models dict file (e.g., {'model_name': model}) 
-aggregator_estimator (dict): aggregator model dict file (e.g., {'model_name': model})
-feature_name (list): list of feature name 
+sub_estimator (dict): sub-models dict (e.g., {'model_name': model}) 
+aggregator_estimator (dict): aggregator model dict (e.g., {'model_name': model})
+feature_name (list): list of feature names 
 layers (int): number of layers 
 model_number_layer (list): the number of each sub-model at each layer
 feature_ratio (float): ratio of randomly selected features for training each model
