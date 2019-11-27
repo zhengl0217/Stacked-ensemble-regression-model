@@ -1,4 +1,3 @@
-#!/usr/bin/env python                                                                  
 import numpy as np
 import pandas as pd
 from sklearn import preprocessing
@@ -83,7 +82,7 @@ RMSE_te = np.sqrt(np.mean((Y_test.ravel()- Y_test_pred.ravel())**2))
 print('RMSE_tr', RMSE_tr)
 print('RMSE_te', RMSE_te)
 
-# draw the parity plot 
+# draw the parity plot for model performance evaluation
 plt.plot(Y_train, Y_train_pred, 's', markerfacecolor= 'None', markersize=4.5, markeredgecolor='grey', markeredgewidth=1)
 plt.plot(Y_test, Y_test_pred, 's', markerfacecolor= 'None', markersize=4.5, markeredgecolor='b', markeredgewidth=1)
 plt.show()
