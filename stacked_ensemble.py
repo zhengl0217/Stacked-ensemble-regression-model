@@ -1,5 +1,5 @@
 """
-This module defines a wrapper function to extract the information that are contained in HTML files automatically .
+This module defines a python wrapper function for stacked ensemble regression model based on sklearn machin learning library.
 """
 import numpy as np
 import random
